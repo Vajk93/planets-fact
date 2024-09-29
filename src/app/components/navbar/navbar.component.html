@@ -3,7 +3,7 @@
     <!-- just make space -->
 </div>
 
-<nav class="w-full text-white fixed top-0 left-0 right-0 border-b-[1px] border-slate-600">
+<nav class="w-full text-white fixed top-0 left-0 right-0 border-b-[1px] border-slate-600 z-50">
     <div class="my_container h-[68px] md:h-[160px] lg:h-[84px] flex flex-row justify-start md:flex-col gap-10 items-center md:justify-center lg:flex-row lg:justify-between">
         <div class="font-app-antonio font-[400] text-[28px] flex-1 md:flex-initial">THE PLANETS</div>
         <div class="hidden md:flex gap-[32px]">
@@ -29,8 +29,8 @@
 
 
     <!-- mobile menu: -->
-    <div [ngClass]="isMenuOpen ? 'w-[100vw] px-5' : 'w-[0vw]'" 
-        class="md:hidden  bg-[#070724] fixed top-[69px] h-full flex flex-col pt-5 overflow-hidden transition-all duration-300 z-50">
+    <div [ngClass]="isMenuOpen ? 'w-[100vw] px-5' : 'w-[0vw]'"
+        class="md:hidden  bg-[#070724] fixed bottom-0 top-[69px] h-full flex flex-col pt-5 overflow-hidden transition-all duration-300">
         <a *ngFor="let link of menuItems" (click)="isMenuOpen = false"
             class="flex justify-between py-5 border-b-[1px] border-slate-600"
             [routerLink]="link.nameAndLink">
@@ -47,6 +47,6 @@
             </div>
         </a>
         <!-- hide last border bottom: -->
-        <div class="w-full bg-[#070724] h-[1px] -mt-[1px]"></div>
+        <div class="w-full bg-[#070724] h-[5px] -mt-[2px]"></div>
     </div>
 </nav>
