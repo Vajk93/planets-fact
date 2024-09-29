@@ -1,1 +1,44 @@
-<h1 class="text-white">{{ planetName }}</h1>
+<!-- buttons on mobile view: -->
+<div class="md:hidden  border-b-[1px] border-slate-600 h-12 flex justify-between items-center px-7">
+    <button class="h-full bg-red-400 font-app-spartan text-xs font-bold text-white border-b-[4px] border-t-[4px] border-t-transparent border-b-blue-500">OVERVIEW</button>
+    <button class="h-full bg-red-400 font-app-spartan text-xs font-bold text-white border-b-[4px] border-t-[4px] border-t-transparent border-b-blue-500">STRUCTURE</button>
+    <button class="h-full  bg-red-400 font-app-spartan text-xs font-bold text-white border-b-[4px] border-t-[4px] border-t-transparent border-b-blue-500">SURFACE</button>
+</div>
+
+<div class="bg-red-400 md:bg-blue-400 lg:bg-purple-400 flex flex-col lg:flex-row justify-between lg:justify-end w-full max-w-[1400px] mx-auto pt-20 md:pt-28 pb-0 md:pb-20 px-5 gap-5">
+    <!-- planet img: -->
+    <div class="w-full h-full flex items-center justify-center">
+        <img src="/assets/planet-earth.svg" alt="" class="max-w-[200px]  md:max-w-[300px] lg:max-w-[800px]">
+    </div>
+    <!-- planet desc and buttons: -->
+    <div class="bg-yellow-400 w-full  flex flex-col md:flex-row md:justify-between lg:justify-end lg:flex-col">
+        <div class="md:max-w-[400px] lg:max-w-[560px] bg-blue-500 lg:pl-40">
+            <h1 class="text-[80px] font-app-antonio font-[400] text-white pb-5 bg-blue-400 lg:-mt-10 text-center md:text-left">Eatrth</h1>
+            <p class="text-white font-app-spartan font-[400] text-[16px] pb-5 text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sunt totam pariatur at cupiditate, dolor hic officia neque dolores molestiae quam, quasi architecto, vero doloremque eveniet saepe suscipit eum perferendis!</p>
+            <div class="font-app-spartan font-[200] text-white opacity-50 flex pb-5 mx-auto w-full justify-center md:justify-start">
+                Source: 
+                <a href="" class="underline font-bold flex items-center gap-2">
+                    Wikipedia
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="#FFF" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".5"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hidden  md:flex bg-orange-400 lg:pl-40 flex-col justify-center">
+            <button class="w-full max-w-[350px] bg-red-300 h-[48px] flex items-center px-5 gap-5 mb-4">
+                <p class="font-app-spartan font-bold text-white opacity-50">01</p>
+                <p class="font-app-spartan font-bold text-white uppercase">OVERVIEW</p>
+            </button>
+            <button class="w-full max-w-[350px] bg-red-300 h-[48px] flex items-center px-5 gap-5 mb-4">
+                <p class="font-app-spartan font-bold text-white opacity-50">02</p>
+                <p class="font-app-spartan font-bold text-white uppercase">Internal Structure</p>
+            </button>
+            <button class="w-full max-w-[350px] bg-red-300 h-[48px] flex items-center px-5 gap-5">
+                <p class="font-app-spartan font-bold text-white opacity-50">03</p>
+                <p class="font-app-spartan font-bold text-white uppercase">Surface Geology</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- stats: -->
+<app-stats></app-stats>
