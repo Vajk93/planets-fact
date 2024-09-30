@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { INavItem } from 'src/app/interfaces/globals';
 
 @Component({
@@ -8,6 +8,19 @@ import { INavItem } from 'src/app/interfaces/globals';
 })
 export class NavbarComponent {
 
+	isScrolled = false;
+
+	// Figyeljük a görgetési eseményt
+	@HostListener('window:scroll', [])
+	onWindowScroll() {
+	  // Ellenőrizzük a görgetési távolságot
+	  if (window.scrollY > 50) { // 50px például
+		this.isScrolled = true;
+	  } else {
+		this.isScrolled = false;
+	  }
+	}
+	
 	protected isMenuOpen:boolean = false;
 	protected menuItems: INavItem[] = [
 		{
