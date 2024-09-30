@@ -42,21 +42,21 @@
             <button (click)="selectContentType('overview')" 
                 [ngClass]="selectedButton === 'overview' ? 'bg-purple-500 border-transparent' : 'bg-[#070724] border-slate-600'" 
                 [ngStyle]="{'background-color': selectedButton === 'overview' ? planet.color : ''}"
-                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 mb-4 border-[1px]">
+                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 mb-4 border-[1px] lg:hover:bg-[#D8D8D8] lg:hover:bg-opacity-20">
                 <p class="font-app-spartan font-bold text-white opacity-50">01</p>
                 <p class="font-app-spartan font-bold text-white uppercase">OVERVIEW</p>
             </button>
             <button (click)="selectContentType('structure')" 
                 [ngClass]="selectedButton === 'structure' ? 'bg-purple-500 border-transparent' : 'bg-[#070724] border-slate-600'"
                 [ngStyle]="{'background-color': selectedButton === 'structure' ? planet.color : ''}"
-                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 mb-4 border-[1px]">
+                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 mb-4 border-[1px] lg:hover:bg-[#D8D8D8] lg:hover:bg-opacity-20">
                 <p class="font-app-spartan font-bold text-white opacity-50">02</p>
                 <p class="font-app-spartan font-bold text-white uppercase">Internal Structure</p>
             </button>
             <button (click)="selectContentType('geology')"
                 [ngClass]="selectedButton === 'geology' ? 'bg-purple-500 border-transparent' : 'bg-[#070724] border-slate-600'" 
                 [ngStyle]="{'background-color': selectedButton === 'geology' ? planet.color : ''}"
-                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 border-[1px]">
+                class="w-full max-w-[350px] h-[48px] flex items-center px-5 gap-5 border-[1px] lg:hover:bg-[#D8D8D8] lg:hover:bg-opacity-20">
                 <p class="font-app-spartan font-bold text-white opacity-50">03</p>
                 <p class="font-app-spartan font-bold text-white uppercase">Surface Geology</p>
             </button>
